@@ -17,7 +17,7 @@ Clone the projects
 
 Import maven dependencies from POM
 
-Go src -> test > java >vehicleRegistrationPlateValue> vehicleRegistrationPlateValue.java then run the test.
+Go src -> main > java >vehicleRegistrationPlateValue> vehicleRegistrationPlateValue.java then run the test.
 
 2. Way:
 Run from command line invoke mvn clean verify

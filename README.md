@@ -12,10 +12,15 @@ Build Tool: Maven
 
 I used TestNG a and Java in this task.
 
+1. Way:
+Clone the projects
 
+Import maven dependencies from POM
 
+Go src -> test > java >vehicleRegistrationPlateValue> vehicleRegistrationPlateValue.java then run the test.
 
-
+2. Way:
+Run from command line invoke mvn clean verify
 
 
 

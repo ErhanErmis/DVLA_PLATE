@@ -37,7 +37,7 @@ public class vehicleRegistrationPlateValue{
     }
 }
 
-
+** inner class kullanmaya gerek yok bence
 class plateInfo {
     String vehicleRegistrationPlateValue;
     String[] vRPV;
@@ -78,7 +78,7 @@ class plateInfo {
         areaAndCodes.put("Y","Yorkshire");
     }
 
-//
+**  first check yerine checkSize() or checkLength() olabilir
     public boolean fistCheck() {
         if(vehicleRegistrationPlateValue.length()==7){
             vRPV = vehicleRegistrationPlateValue.split("");
@@ -91,7 +91,11 @@ class plateInfo {
             r3 = vRPV[6];}else{
             System.out.println("You need to enter 7 character only. You entered:"+ vehicleRegistrationPlateValue.length()+" character.  Please do not enter less or more than 7 character. ");
             return false;}
+        
+**  bu toplamanin ne anlama geldigi sorulabilir
         boolean randomLetters = p.matcher(b+r1+r2+r3).find();
+        
+     
                 //Arrays.stream(unexpected).anyMatch(r1::equals)||Arrays.stream(unexpected).anyMatch(r2::equals)||Arrays.stream(unexpected).anyMatch(r3::equals)||Arrays.stream(unexpected).anyMatch(b::equals);
         //System.out.println(randomLetters)2
 

@@ -10,7 +10,7 @@ www.linkedin.com/in/erhan-ermis
 
 Build Tool: Maven
 
-I used Junit a and Java in this task.
+I used TestNG a and Java in this task.
 
 
 

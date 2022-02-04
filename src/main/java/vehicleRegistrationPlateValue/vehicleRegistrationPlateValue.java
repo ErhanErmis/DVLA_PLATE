@@ -1,4 +1,4 @@
-package vRPV;
+package vehicleRegistrationPlateValue;
 
 import org.testng.annotations.Test;
 
@@ -7,13 +7,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-public class vRPV{
+public class vehicleRegistrationPlateValue{
     public static int length; //?????
     @Test
 
     public void test(){
         String positiveTest[]={"BA01XTY","CA12XTY","DA65XTY"};
-        String negativeTest[] ={"QA12XTY","iA12XTY","Bq12XTY","BA12XTy","BAA2XTY","BA1AXTY","BA12,TY","BA12 TY", "BA49XTY", "BA99XTY", "BA","9999999999999"};
+        String negativeTest[] ={"QA12XTY","iA12XTY","Bq12XTY","BA12XTy","BAA2XTY","BA1AXTY","BA12,TY","BA12 TY", "BA49XTY", "BA99XTY", "BA15XT9", "BA","9999999999999"};
 
         for(int i=0; i<positiveTest.length;i++){
             System.out.println(i+1+" ) for the test= "+ positiveTest[i]);
@@ -48,7 +48,7 @@ class plateInfo {
     String r1 ;
     String r2 ;
     String r3 ;
-    Pattern p = Pattern.compile("[^A-HJ-PR-Z0-9]");
+    Pattern p = Pattern.compile("[^A-HJ-PR-Z]");
     private Map<String, String> areaAndCodes = new HashMap<>();
     public plateInfo(String vehicleRegistrationPlateValue){
         this.vehicleRegistrationPlateValue=vehicleRegistrationPlateValue;
@@ -78,7 +78,7 @@ class plateInfo {
         areaAndCodes.put("Y","Yorkshire");
     }
 
-
+//
     public boolean fistCheck() {
         if(vehicleRegistrationPlateValue.length()==7){
             vRPV = vehicleRegistrationPlateValue.split("");
